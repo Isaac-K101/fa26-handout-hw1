@@ -12,7 +12,7 @@ from src.q3 import capitalize_words
 def test_basic():
     assert capitalize_words("hello cs") == "Hello Cs"
 
-# verify that already capitalized words are unchanged
+# verify that already capitalized words are unchanged 
 def test_already_capitalized():
     assert capitalize_words("Hello Cs") == "Hello Cs"
 
