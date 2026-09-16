@@ -14,5 +14,5 @@ This question is designed to give you points for getting your GitHub and
 Pawtograder setup working, and making a successful submission."""
 
 def print_myInterest() -> None:
-    """Prints 'meow' to the console."""
-    print("meow")
+    """Prints my computing interest to the console."""
+    print("Hi. My biggest interest in computing would be the cybersecurity aspect. Network security and working with network equipments makes me happy.")
