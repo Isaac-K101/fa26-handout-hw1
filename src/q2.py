@@ -24,4 +24,38 @@ def validate_password(password: str) -> bool:
     bool
         True if the password is valid, and false otherwise
     """
-    pass
+
+    has_upper = False
+    has_lower = False
+    has_digit = False
+    has_special = False
+
+    # loop through each character and check what it is
+
+    for c in password:
+        if c.isupper():
+            has_upper = True
+        if c.islower():
+            has_lower = True
+        if c.isdigit():
+            has_digit = True
+
+         # this part checks if character is one of the required special characters
+        if c in "!@#$%^&*":
+            has_special = True
+
+    # check all requirements and return False if any are not met
+    if len(password) < 8:
+        return False
+    if not has_upper:
+        return False
+    if not has_lower:
+        return False
+    if not has_digit:
+        return False
+    if not has_special:
+        return False
+    return True
+
+
+    
