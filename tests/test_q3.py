@@ -28,11 +28,11 @@ def test_non_letter_start():
     assert capitalize_words("1hello") == "1Hello"
 
 def test_non_letter_start_multiple():
-    assert capitalize_words("1hello 2world") == "1Hello 2World"
+    assert capitalize_words("1hello 2cs") == "1Hello 2Cs"
 
 # string with only spaces, no words to capitalize
 def test_all_spaces():
     assert capitalize_words("   ") == "   "
 
 def test_mixed_case():
-    assert capitalize_words("hELLO wORLD") == "HELLO WORLD"
+    assert capitalize_words("hELLO cS") == "HELLO CS"
